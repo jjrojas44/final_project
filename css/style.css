@@ -1,3 +1,11 @@
+.navbar{
+background-color: var(--Primary-extra-light);
+
+}
+.nav-link{
+    color: var(--primary);
+}
+
 .hero{
     height: 70vh;
     background-color: rgb(134, 134, 134);
