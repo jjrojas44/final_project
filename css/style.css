@@ -1,16 +1,48 @@
 .navbar{
-background-color: var(--Primary-extra-light);
-
+    background-color: var(--Primary-extra-light);
 }
 .nav-link{
-    color: var(--primary);
-}
+    color: var(--Primary) !important;
+} 
+
+.nav-link.active{
+    color: var(--Secondary-dark) !important;
+    font-weight: bold;
+    border-bottom: 2px solid var(--Secondary-dark);
+} 
+
 
 .hero{
-    height: 70vh;
-    background-color: rgb(134, 134, 134);
+    min-height: 70vh;
+    background: var(--Primary-gradient);
     display: flex;
     align-items: center;
+}
+
+.heroImg{
+    width: 100%;
+    padding: 34px 40px;
+}
+
+/* lg screen */
+@media (max-width: 1199.98px) { 
+    .heroImg{
+        padding: 20px;
+    }
+ }
+ /* md screen */
+@media (max-width: 991.98px) { 
+    .heroImg{
+        padding: 12px;
+    }
+ }
+
+ .sectionTitle{
+     text-align: center;
+     margin-bottom: 20px;
+ }
+ .card{
+     margin: 10px 0px;
 }
 
 .footer{
@@ -18,16 +50,4 @@ background-color: var(--Primary-extra-light);
     text-align: center;
     padding: 40px;
     margin-top: 60px;
-}
-
-:root{
-    --primary-color: #5c5c5c;
-    --primary-color-light: #535353;
-    --primary-color-dark: #363636;
-    --h1:3rem;
-}
-
-.btn-primary{
-    background-color: var(--primary-color);
-    font-size: var(--h1);
 }
